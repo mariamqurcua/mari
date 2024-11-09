@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    color: #fff;
+    font-size: 1.1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+    
+article{
+  background-color:#f7af31;
+    flex: 3 3 13em;
+    padding: 1em;
+    margin: 10px;
+}
+nav{
+    order: -1;
+}
+
+nav,aside{
+    background-color: chocolate;
+    flex: 1;
+    margin: 10px;
+}
+header,footer{
+    flex: 0 0 5em;
+ background-color: darkgray;
+}
+img{
+    height: 300px;
+    width: 300px;
+    margin: 66px;
+}
+@media screen and (min-width:600px){
+    body{
+        min-height: 100vh;
+    }
+    main{
+        flex-direction: row;
+        min-height: 100%;
+        flex: 1 1 auto;
+    }
+
+}
